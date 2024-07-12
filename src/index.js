@@ -1,1 +1,4 @@
-console.log("Welcome!")
+import './style.css'
+import { renderHome } from './home'
+
+renderHome();
