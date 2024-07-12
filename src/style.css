@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px #a3a3a3;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.restaurant-name {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 150px;
+    height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: .25ch;
+    border-radius: 20px;
+    border: none;
+    background-color: #7f1d1d;
+}
+
+button:hover {
+    background-color: #991b1b;
+}
+
+button:active {
+    background-color: #b91c1c;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    height: 1000px;
+    background-image: url(./assets/korean-cuisine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 25px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    font-style: italic;
+    letter-spacing: .25ch;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    color: black;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #d4d4d4;
+    font-size: 20px;
+    letter-spacing: .25ch;
+}
