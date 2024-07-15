@@ -58,6 +58,10 @@ button {
     border: none;
 }
 
+button:hover, .active {
+    color: #7f1d1d;
+}
+
 #content {
     display: flex;
     align-items: center;
@@ -97,7 +101,7 @@ button {
     color: black;
     background-color: white;
     width: 500px;
-    height: 350px;
+    height: 300px;
     padding: 20px;
     border-radius: 50px;
     box-shadow: 2px 2px 2px 2px #d4d4d4;
