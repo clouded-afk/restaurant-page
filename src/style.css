@@ -8,8 +8,6 @@
 }
 
 body {
-    margin-left: 10%;
-    margin-right: 10%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -19,14 +17,15 @@ body {
 
 header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
-    box-shadow: 2px 2px 2px 2px #a3a3a3;
-    border-radius: 20px;
     background-color: white;
-    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 2px 2px 2px 2px #d4d4d4;
 }
 
 .restaurant-info {
@@ -34,41 +33,29 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 150px;
 }
 
 .restaurant-name {
     font-size: 42px;
     font-weight: bold;
-    color: black;
+    color: #7f1d1d;
+    letter-spacing: .25ch;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 600px;
-    margin-bottom: 10px;
 }
 
 button {
     width: 150px;
-    height: 25px;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: black;
     letter-spacing: .25ch;
     border-radius: 20px;
     border: none;
-    background-color: #7f1d1d;
-}
-
-button:hover {
-    background-color: #991b1b;
-}
-
-button:active {
-    background-color: #b91c1c;
 }
 
 #content {
@@ -78,6 +65,7 @@ button:active {
     flex-direction: column;
     margin-top: 25px;
     height: 1000px;
+    width: 90%;
     background-image: url(./assets/korean-cuisine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,11 +96,45 @@ button:active {
     margin-top: 25px;
     color: black;
     background-color: white;
-    width: 350px;
+    width: 500px;
     height: 350px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 50px;
     box-shadow: 2px 2px 2px 2px #d4d4d4;
     font-size: 20px;
     letter-spacing: .25ch;
+}
+
+footer {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -4px 3px #d4d4d4;
+}
+
+p {
+    font-size: 20px;
+}
+
+.github-link {
+    text-decoration: none;
+}
+
+.github-link:visited {
+    color: black;
+}
+
+.github-link:hover {
+    color: #7f1d1d;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
 }
