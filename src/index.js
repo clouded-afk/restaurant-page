@@ -54,6 +54,7 @@ homeBtn.addEventListener("click", () => {
 })
 
 menuBtn.addEventListener("click", () => {
+    clearContent()
     renderMenu()
     menuBtn.classList.add("active")
     aboutBtn.removeAttribute("class", "active")
