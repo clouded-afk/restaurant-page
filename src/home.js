@@ -1,4 +1,3 @@
-
 function renderHome() {
     const header = document.querySelector("header");
     const container = document.getElementById("content");
