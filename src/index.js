@@ -1,5 +1,5 @@
 import './style.css';
-import Icon from './assets/github-mark.png'
+import Icon from './assets/github-mark.png';
 import { renderHome } from './home';
 import { renderAbout } from './about';
 import { renderMenu } from './menu';
@@ -21,18 +21,18 @@ function renderHeader() {
 }
 
 function renderFooterIcon() {
-    const footer = document.querySelector("footer")
+    const footer = document.querySelector("footer");
     const githubIcon = new Image();
-    githubIcon.classList.add("github-icon")
-    githubIcon.src = Icon
-    footer.appendChild(githubIcon)
+    githubIcon.classList.add("github-icon");
+    githubIcon.src = Icon;
+    footer.appendChild(githubIcon);
 
     return footer;
 }
 
 function clearContent() {
-    const content = document.getElementById("content")
-    content.innerHTML = ""
+    const content = document.getElementById("content");
+    content.innerHTML = "";
 
     return content;
 }
@@ -48,22 +48,23 @@ const aboutBtn = document.querySelector(".about")
 homeBtn.addEventListener("click", () => {
     clearContent();
     renderHome();
-    homeBtn.classList.add("active")
-    menuBtn.removeAttribute("class", "active")
-    aboutBtn.removeAttribute("class", "active")
+    homeBtn.classList.add("active");
+    menuBtn.removeAttribute("class", "active");
+    aboutBtn.removeAttribute("class", "active");
 })
 
 menuBtn.addEventListener("click", () => {
-    clearContent()
-    renderMenu()
-    menuBtn.classList.add("active")
-    aboutBtn.removeAttribute("class", "active")
-    homeBtn.removeAttribute("class", "active")
+    clearContent();
+    renderMenu();
+    menuBtn.classList.add("active");
+    aboutBtn.removeAttribute("class", "active");
+    homeBtn.removeAttribute("class", "active");
 })
 
 aboutBtn.addEventListener("click", () => {
-    renderAbout()
-    aboutBtn.classList.add("active")
-    homeBtn.removeAttribute("class", "active")
+    clearContent();
+    renderAbout();
+    aboutBtn.classList.add("active");
+    homeBtn.removeAttribute("class", "active");
     menuBtn.removeAttribute("class", "active")
-})
+});
