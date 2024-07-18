@@ -10,11 +10,11 @@ function renderHome() {
 
     const description = document.createElement("div");
     description.classList.add("description");
-    description.textContent = "If you are looking for authentic Korean BBQ, you have come to the right place! We take pride in our family recipes that have been passed down through multiple generations. Just remember, theres nothing quite like a made from scratch, homecooked meal!"
+    description.textContent = "If you are looking for authentic Korean BBQ, you have come to the right place! We take pride in our family recipes that have been passed down through multiple generations. Just remember, theres nothing quite like a made from scratch, homecooked meal!";
     homeContent.appendChild(description)
 
-    container.appendChild(homeContent)
-}
+    container.appendChild(homeContent);
+};
 
 export {
     renderHome
